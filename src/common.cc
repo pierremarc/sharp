@@ -74,7 +74,7 @@ namespace sharp {
     } else if (imageType == ImageType::WEBP) {
       vips_webpload_buffer(buffer, length, &image, "access", access, NULL);
     } else if (imageType == ImageType::TIFF) {
-      vips_tiffload_buffer(buffer, length, &image, "access", access, NULL);
+      // vips_tiffload_buffer(buffer, length, &image, "access", access, NULL);
     }
     return image;
   }
